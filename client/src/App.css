@@ -31,6 +31,7 @@ body {
   border: 0;
   outline: 0;
   box-sizing: border-box;
+  background: #000;
 
 }
 
@@ -95,12 +96,14 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 90%;
   height: 80px;
   padding: 10px 90px;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.4);
+  background: #6f6af8;
   border-bottom: 1px solid #fff;
+  margin-left: 60px;
+  margin-right: 20px;
 }
 
 .nav__container {
@@ -146,6 +149,10 @@ nav {
   border-radius: var(--radius-2);
   color: var(--color-white);
   transition: var(--transition);
+}
+
+.nav__signup svg {
+  background-color: #987C55;
 }
 
 /* header css end  */
