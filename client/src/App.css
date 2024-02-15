@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..300&display=swap');
+
 :root {
   --color-primary: #6f6af8;
   --color-white: #fff;
@@ -8,7 +10,7 @@
 
   --transition: all 300ms ease;
 
-  --container-width-lg: 75%;
+  --container-width-lg: 85%;
   --container-width-md: 92%;
   --form-width: 50%;
 
@@ -23,6 +25,7 @@ body {
   background: var(--color-bg);
   font-size: 0.9rem;
   line-height: 1.6rem;
+  background: #000;
 }
 
 * {
@@ -31,8 +34,6 @@ body {
   border: 0;
   outline: 0;
   box-sizing: border-box;
-  background: #000;
-
 }
 
 a {
@@ -96,14 +97,12 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 90%;
+  z-index: 1000;
+  width: 100%;
   height: 80px;
   padding: 10px 90px;
   box-sizing: border-box;
-  background: #6f6af8;
-  border-bottom: 1px solid #fff;
-  margin-left: 60px;
-  margin-right: 20px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .nav__container {
@@ -114,7 +113,7 @@ nav {
 }
 
 .nav__logo {
-  width: 3rem;
+  width: 6rem;
   display: block;
 }
 
@@ -156,3 +155,88 @@ nav {
 }
 
 /* header css end  */
+
+/* footer css start  */
+
+footer {
+  width: 100%;
+  height: 280px;
+  padding: 10px 90px;
+  box-sizing: border-box;
+  /*background: rgba(0, 0, 0, 0.4); */
+  background: #181A1A;
+}
+
+.footer__gold {
+  width: 100%;
+  height: 10px;
+  background-color: #987C55;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.footer__logo img {
+  width: 100px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.footer__icon-text1,
+.footer__icon-text2,
+.footer__icon-text3 {
+  display: flex;
+  margin: 10px auto;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.footer__icon-text1 {
+  width: 250px;
+}
+
+.footer__icon-text1 h4,
+.footer__icon-text2 h4,
+.footer__icon-text3 h4 {
+  color: #987C55;
+}
+
+.social__icons {
+  gap: 20px;
+  display: flex;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.footer__links {
+  display: flex;
+  gap: 50px;
+  margin-top: 15px;
+}
+
+.footer__links h3 {
+  color: #BCB9B9;
+  padding-bottom: 15px;
+}
+
+.footer__links ul li {
+  color: #BCB9B9;
+  padding-bottom: 5px;
+}
+
+/* footer css end  */

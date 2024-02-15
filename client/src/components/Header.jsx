@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import logo from "../images/logo-digital.png";
+import logo from "../images/dosh_logo.png";
 import '../App.css'
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
                 </Link>
                 <ul className='nav__menu'>
                     <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/About'>About</Link></li>
+                    <li><Link to='/about'>About us</Link></li>
                     <li><Link to='/productservices'>Product & Services</Link></li>
                     <li><Link to='/serviceproviders'>Service Providers</Link></li>
                     <li><Link to='/contact'>Contact</Link></li>
