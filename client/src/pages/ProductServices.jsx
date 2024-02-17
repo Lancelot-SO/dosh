@@ -3,7 +3,10 @@ import './ProductServices.css';
 import product from '../images/product.png'
 import doctor from "../images/doctor.png"
 import productservice from "../images/productservice.png"
-import data from '../data'
+import data from '../data';
+import cat from '../images/cat.mp4'
+
+import dosh from "../images/dosh_logo.png"
 
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
@@ -135,16 +138,141 @@ const ProductServices = () => {
             </section>
 
             <section className='video__section'>
-                <div className='container video'>
-                    <div className='video__left'></div>
+                <div className='container video-main'>
+                    <div className='video__left'>
+                        <video src={cat} autoPlay loop muted />
+                    </div>
                     <div className='video__right'>
-                        <h5>Success Stories Video</h5>
+                        <h4>SUCCESS STORIES VIDEO</h4>
                         <h6>“ Affordable health insurance for you and your loved ones.</h6>
-                        <small> Dial *915# to sign up with as low as GHS 365 and get GHS 9000 worth of cover at any medical facility. Join the DOSH Revolution!. ”</small>
-            </div>
-            </div>
-                    </section>
-                
+                        <small>Dial *915# to sign up with as low as GHS 365 and get GHS 9000 worth of cover at any medical facility.<br />Join the DOSH Revolution!. ”</small>
+                    </div>
+                </div>
+            </section>
+
+            <section className='insurance'>
+                <div className='prod-insure'>
+                    <h2>DOSH Insurance Products</h2>
+                </div>
+                <div className='main-insurance'>
+                    <div className='glass-bg'>
+                        <div className='glass-table'>
+                            <table>
+                                <tr>
+                                    <td className='dosh'><img src={dosh} alt='Dosh Logo' /></td>
+                                    <td className='price'>
+                                        <h3>Insurance</h3>
+                                        <span>GHS365</span>
+                                        <small><Link>Read More</Link></small>
+                                    </td>
+                                    <td className='price-like'>
+                                        <h3>Insurance</h3>
+                                        <span>GHS750</span>
+                                        <small><Link>Read More</Link></small>
+                                    </td>
+                                    <td className='price-next'>
+                                        <h3>Insurance</h3>
+                                        <span>GHS1000</span>
+                                        <small><Link>Read More</Link></small>
+                                    </td>
+                                    <td className='price-next'>
+                                        <h3>Insurance</h3>
+                                        <span>GHS2500</span>
+                                        <small><Link>Read More</Link></small>
+                                    </td>
+                                    <td className='price-next'>
+                                        <h3>Insurance</h3>
+                                        <span>GHS5000</span>
+                                        <small><Link>Read More</Link></small>
+                                    </td>
+                                    <td className='price-next'>
+                                        <h3>Insurance</h3>
+                                        <span>GHS10000</span>
+                                        <small><Link>Read More</Link></small>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td className='heading'>Premium</td>
+                                    <td className='row-center'>GHS 365</td>
+                                    <td className='row-center'>GHS 750</td>
+                                    <td className='row-center'>GHS 1000</td>
+                                    <td className='row-center'>GHS 2500</td>
+                                    <td className='row-center'>GHS 5000</td>
+                                    <td className='row-center'>GHS 10000</td>
+                                </tr>
+                                <tr>
+                                    <td className='heading-total'>Total Cover</td>
+                                    <td className='row-center-total'>GHS 9,000</td>
+                                    <td className='row-center-total'>GHS 18,000</td>
+                                    <td className='row-center-total'>GHS 30,000</td>
+                                    <td className='row-center-total'>GHS 60,000</td>
+                                    <td className='row-center-total'>GHS 95,000</td>
+                                    <td className='row-center-total'>GHS 95,000</td>
+                                </tr>
+                                <tr>
+                                    <td className='heading'>Out Patient Limit (OP)</td>
+                                    <td className='row-center'>GHS 1,500</td>
+                                    <td className='row-center'>GHS 3000</td>
+                                    <td className='row-center'>GHS 5,000</td>
+                                    <td className='row-center'>GHS 10,000</td>
+                                    <td className='row-center'>GHS 20,000</td>
+                                    <td className='row-center'>GHS 20,000</td>
+                                </tr>
+                                <tr>
+                                    <td className='heading'>In Patient Limit (IP)</td>
+                                    <td className='row-center'>GHS 7,500</td>
+                                    <td className='row-center'>GHS 1,500</td>
+                                    <td className='row-center'>GHS 2,500</td>
+                                    <td className='row-center'>GHS 5,000</td>
+                                    <td className='row-center'>GHS 75,000</td>
+                                    <td className='row-center'>GHS 75,000</td>
+                                </tr>
+                                <tr>
+                                    <td className='heading'>Medication Limit</td>
+                                    <td className='row-center'>GHS 500</td>
+                                    <td className='row-center'>GHS 900</td>
+                                    <td className='row-center'>GHS 1,500</td>
+                                    <td className='row-center'>GHS 3,700</td>
+                                    <td className='row-center'>GHS 75,000</td>
+                                    <td className='row-center'>GHS 75,000</td>
+                                </tr>
+                                <tr >
+                                    <td className='heading'>Lab/Scan Limit (IP/OP)</td>
+                                    <td className='row-center'>GHS 900</td>
+                                    <td className='row-center'>GHS 1,500</td>
+                                    <td className='row-center'>GHS 2,000</td>
+                                    <td className='row-center'>GHS 5,000</td>
+                                    <td className='row-center'>GHS 10,000</td>
+                                    <td className='row-center'>GHS 10,000</td>
+                                </tr>
+                                <tr>
+                                    <td className='heading-last'></td>
+                                    <td className="signup-button">
+                                        <button>Sign Up</button>
+                                    </td>
+                                    <td className="signup-button">
+                                        <button>Sign Up</button>
+                                    </td>
+                                    <td className="signup-button">
+                                        <button>Sign Up</button>
+                                    </td>
+                                    <td className="signup-button">
+                                        <button>Sign Up</button>
+                                    </td>
+                                    <td className="signup-button">
+                                        <button>Sign Up</button>
+                                    </td>
+                                    <td className="signup-button">
+                                        <button>Sign Up</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     )
 }

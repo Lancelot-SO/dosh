@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import logo from "../images/dosh_logo.png";
 import '../App.css'
 
 const Header = () => {
+    const [activeLink, setActiveLink] = useState(null);
+
+    const handleLinkClick = (index) => {
+        setActiveLink(index);
+    };
     return (
         <nav>
             <div className='container nav__container'>
@@ -11,12 +16,49 @@ const Header = () => {
                     <img src={logo} alt='navbar logo' />
                 </Link>
                 <ul className='nav__menu'>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/about'>About us</Link></li>
-                    <li><Link to='/productservices'>Product & Services</Link></li>
-                    <li><Link to='/serviceproviders'>Service Providers</Link></li>
-                    <li><Link to='/contact'>Contact</Link></li>
-
+                    <li>
+                        <Link
+                            to="/"
+                            className={activeLink === 0 ? 'active' : ''}
+                            onClick={() => handleLinkClick(0)}
+                        >
+                            Home
+                        </Link>
+                    </li>                 <li>
+                        <Link
+                            to="/about"
+                            className={activeLink === 1 ? 'active' : ''}
+                            onClick={() => handleLinkClick(1)}
+                        >
+                            About us
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="/productservices"
+                            className={activeLink === 2 ? 'active' : ''}
+                            onClick={() => handleLinkClick(2)}
+                        >
+                            Product & Services
+                        </Link>
+                    </li>                     <li>
+                        <Link
+                            to="/serviceproviders"
+                            className={activeLink === 3 ? 'active' : ''}
+                            onClick={() => handleLinkClick(3)}
+                        >
+                            Service Providers
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="/contact"
+                            className={activeLink === 4 ? 'active' : ''}
+                            onClick={() => handleLinkClick(4)}
+                        >
+                            Contact
+                        </Link>
+                    </li>
                 </ul>
                 <div className='nav__signup-container'>
                     <Link to='/login' className='nav__login'>Login</Link>

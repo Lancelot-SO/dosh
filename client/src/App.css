@@ -125,6 +125,36 @@ nav {
   margin-top: 0.3rem
 }
 
+.nav__menu li {
+  position: relative;
+}
+
+.nav__menu li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__menu li a.active {
+  color: #987C55;
+  /* Color after clicking */
+}
+
+.nav__menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #987C55;
+  transition: width 0.3s ease;
+}
+
+.nav__menu li a.active::after {
+  width: 100%;
+}
+
 .nav__signup-container {
   display: flex;
   flex-direction: row;
