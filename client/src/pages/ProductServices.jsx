@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './ProductServices.css';
 import product from '../images/product.png'
-import doctor from "../images/doctor.png"
 import productservice from "../images/productservice.png"
-import data from '../data';
-import cat from '../images/cat.mp4'
+import doshdata from "../doshdata.js"
+import doshvideo from '../images/dosh.mp4'
 
 import dosh from "../images/dosh_logo.png"
 
@@ -14,11 +13,11 @@ import { Link } from 'react-router-dom';
 
 const ProductServices = () => {
 
-    const [people] = useState(data);
+    const [products] = useState(doshdata);
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        const lastIndex = people.length - 1;
+        const lastIndex = products.length - 1;
         if (index < 0) {
             setIndex(lastIndex);
         }
@@ -26,7 +25,7 @@ const ProductServices = () => {
             setIndex(0);
         }
 
-    }, [index, people]);
+    }, [index, products]);
 
     useEffect(() => {
         let slider = setInterval(() => {
@@ -79,13 +78,13 @@ const ProductServices = () => {
                 </h1>
                 <div className='section-center'>
                     {
-                        people.map((item, indexPeople) => {
-                            const { id, quote } = item;
+                        products.map((item, indexPeople) => {
+                            const { id, quote, image, title } = item;
                             let position = "nextSlide";
                             if (indexPeople === index) {
                                 position = "activeSlide";
                             }
-                            if (indexPeople === index - 1 || (index === 0 && indexPeople === people.length - 1)) {
+                            if (indexPeople === index - 1 || (index === 0 && indexPeople === products.length - 1)) {
                                 position = "lastSlide"
                             }
                             return (
@@ -93,7 +92,7 @@ const ProductServices = () => {
                                     <article className={position} key={id}>
                                         <div className='divide'>
                                             <div className='left'>
-                                                <h4>DOSH <br />INSURANCE</h4>
+                                                <h4>{title}</h4>
                                                 <hr className='underline'></hr>
                                                 <p className='quote'>{quote}</p>
                                                 <Link to='/'>Read more
@@ -114,7 +113,7 @@ const ProductServices = () => {
 
                                             </div>
                                             <div className='right'>
-                                                <img src={doctor} alt='person' className="person-img" />
+                                                <img src={image} alt='person' className="person-img" />
                                             </div>
 
                                         </div>
@@ -140,7 +139,7 @@ const ProductServices = () => {
             <section className='video__section'>
                 <div className='container video-main'>
                     <div className='video__left'>
-                        <video src={cat} autoPlay loop muted />
+                        <video src={doshvideo} autoPlay loop muted />
                     </div>
                     <div className='video__right'>
                         <h4>SUCCESS STORIES VIDEO</h4>

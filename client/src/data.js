@@ -1,22 +1,28 @@
+import Ekow from "./images/tom.png"
+import Joel from "./images/Image-1.png"
+import Nat from "./images/Image-2.png"
+import Jerry from "./images/jerry.png"
+
+
 const people = [
     {
         id: 1,
-        quote: 'Glenn Health Insurance offers an all-around medical care package for you and your loved ones, which includes among others, hospital consultations, surgeries, dental care, prescribed drugs, and optical care. We provide you with services in hospitals, clinics, and laboratories across the 16 regions of Ghana.',
+        pic: Ekow,
         name: 'Ekow Thompson'
     },
     {
         id: 2,
-        quote: 'Doris Health Insurance offers an all-around medical care package for you and your loved ones, which includes among others, hospital consultations, surgeries, dental care, prescribed drugs, and optical care. We provide you with services in hospitals, clinics, and laboratories across the 16 regions of Ghana.',
+        pic: Joel,
         name: 'Joel Nortey'
     },
     {
         id: 3,
-        quote: 'Jerry Health Insurance offers an all-around medical care package for you and your loved ones, which includes among others, hospital consultations, surgeries, dental care, prescribed drugs, and optical care. We provide you with services in hospitals, clinics, and laboratories across the 16 regions of Ghana.',
+        pic: Nat,
         name: 'Frank Kay'
     },
     {
         id: 4,
-        quote: 'Lancelot Health Insurance offers an all-around medical care package for you and your loved ones, which includes among others, hospital consultations, surgeries, dental care, prescribed drugs, and optical care. We provide you with services in hospitals, clinics, and laboratories across the 16 regions of Ghana.',
+        pic: Jerry,
         name: 'Jerry Sam'
     },
 ]

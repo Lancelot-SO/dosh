@@ -4,7 +4,6 @@ import services from "../images/services.png"
 import { FaFilter } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import anime from '../images/anime.png'
-import tom from "../images/tom.png"
 import data from "../data"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import FilterModal from '../components/FilterModal';
@@ -140,9 +139,9 @@ const ServiceProviders = () => {
                         return (
                             <article className={position} key={id}>
                                 <div className='divide'>
-                                    <img src={tom} alt='person' className="service-img" />
+                                    <img src={item.pic} alt='person' className="service-img" />
                                     <div className='service-name-quote'>
-                                        <span className='service-name'>Ekow Thompson</span>
+                                        <span className='service-name'>{item.name}</span>
                                         <p className='service-quote'>Dosh insurance company prioritizes customer satisfaction and is committed to providing exceptional service to our clients.</p>
                                     </div>
                                 </div>
@@ -150,10 +149,10 @@ const ServiceProviders = () => {
                         );
                     })}
                     <button className='previous' onClick={() => setIndex(index - 1)}>
-                        <IoIosArrowBack />
+                        <IoIosArrowBack size={30} />
                     </button>
                     <button className='nextitem' onClick={() => setIndex(index + 1)}>
-                        <IoIosArrowForward />
+                        <IoIosArrowForward size={30} />
                     </button>
                     <div className="slider-indicators">
                         <span className='slider-total'>{`${(index + 1).toString().padStart(2, '0')}/${people.length.toString().padStart(2, '0')}`}</span>

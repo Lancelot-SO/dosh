@@ -11,7 +11,12 @@ import slider2 from "../images/slider.png";
 import slider7 from '../images/slider7.png'
 
 import student from '../images/student-photo.png'
-
+import elevate from '../images/elevate.png'
+import money from '../images/money.png';
+import seamless from "../images/seamless.png"
+import ride from '../images/ride.png'
+import reinvigorate from '../images/reinvigorate.png'
+import scale from "../images/scale.png"
 
 
 
@@ -45,9 +50,9 @@ const Home = () => {
                         <div className='slide first'>
                             <img src={slider1} alt='hero' />
                             <div className='hero__text'>
-                                <h2>Health <b>insurance</b> for the<br />
-                                    years you need it the most.</h2>
-                                <p>Your sixties must not be spent navigating arthritis and other medical
+                                <p className='first_slider'>Health <b>insurance</b> for the<br />
+                                    years you need it the most.</p>
+                                <p className='first_slider-p'>Your sixties must not be spent navigating arthritis and other medical
                                     emergencies. Allow DOSH to assist you with comprehensive health coverage
                                     while you enjoy the love of family and friends. Dial *915# now to sign up
                                 </p>
@@ -77,7 +82,7 @@ const Home = () => {
                         <div className='slide'>
                             <img src={slider2} alt='hero' />
                             <div className='hero__text'>
-                                <h2>We've got <b>insurance</b> for your<br /> old girl.</h2>
+                                <p className='second_slider-h2'>We've got <b>insurance</b> for your<br /> old girl.</p>
                                 <p className='second_slider'>Securing comprehensive health insurance for your folks is a thoughtful
                                     investment in their health and your savings. DOSH provides affordable yet
                                     quality health insurance that allows them to access healthcare services
@@ -109,9 +114,9 @@ const Home = () => {
                         <div className='slide'>
                             <img src={slider3} alt='hero' />
                             <div className='hero__text'>
-                                <h2 className='third_slider'>Choose <b>comprehensive</b><br />
+                                <p className='third_slider'>Choose <b>comprehensive</b><br />
                                     coverage that leaves no one<br />
-                                    behind.</h2>
+                                    behind.</p>
                             </div>
 
                             <div className='slide-text'>
@@ -139,7 +144,7 @@ const Home = () => {
                         <div className='slide'>
                             <img src={slider4} alt='hero' />
                             <div className='hero__text'>
-                                <h2 className='fourth_slider'>Keep the <b>DAD</b> jokes coming</h2>
+                                <p className='fourth_slider'>Keep the <b>DAD</b> jokes coming</p>
                                 <p className='fourth_slider_p'>Protect old boy's health with DOSH insurance while protecting your savings.
                                 </p>
                             </div>
@@ -168,8 +173,8 @@ const Home = () => {
                         <div className='slide'>
                             <img src={slider5} alt='hero' />
                             <div className='hero__text'>
-                                <h2 className='fifth_slider'>Health insurance that covers <b>EYE<br />
-                                    DENTAL, MENTAL HEALTH</b> care and more</h2>
+                                <p className='fifth_slider'>Health insurance that covers <b>EYE<br />
+                                    DENTAL, MENTAL HEALTH</b> care and more</p>
                                 <p className='fifth_slider_p'>
                                     With as little as <b>GHS 365</b>, you get up to <b>GHS 9000</b> WORTH OF QUALITY<br />
                                     healthcare at any medical facility. You also get safe and instant access<br />
@@ -225,9 +230,9 @@ const Home = () => {
                         <div className='slide'>
                             <img src={slider7} alt='hero' />
                             <div className='hero__text'>
-                                <h2 className='seventh_slider'> Another <b>round?</b><br />
+                                <p className='seventh_slider'> Another <b>round?</b><br />
                                     The only health insurance that<br />
-                                    covers erectile dysfudysfunctions treatment </h2>
+                                    covers erectile dysfudysfunctions treatment </p>
                             </div>
                             <div className='slide-text'>
                                 <h3>People are signing  with us</h3>
@@ -254,9 +259,9 @@ const Home = () => {
                         <div className='slide'>
                             <img src={slider8} alt='hero' />
                             <div className='hero__text'>
-                                <h2 className='eight_slider'>Overall wellness includes <b>Metal health.</b><br />
+                                <p className='eight_slider'>Overall wellness includes <b>Metal health.</b><br />
                                     We’ve got you covered.
-                                </h2>
+                                </p>
                                 <p className='eight_slider_p'>The only health insurance with metal health coverage</p>
                             </div>
                             <div className='slide-text'>
@@ -347,14 +352,14 @@ const Home = () => {
                         </Link>
                     </div>
                     <div className='home__student-right'>
-                        <img src={student} alt='student' />
+                        <img src={elevate} alt='student' />
                     </div>
                 </div>
             </section>
             <section className='money__section'>
                 <div className='container home__money'>
                     <div className='home__money-left'>
-                        <img src={student} alt='student' />
+                        <img src={money} alt='student' />
                     </div>
                     <div className='home__money-right'>
                         <h4>DOSH FINANCE:</h4>
@@ -416,7 +421,7 @@ const Home = () => {
                         </Link>
                     </div>
                     <div className='home__digital-right'>
-                        <img src={student} alt='digital' />
+                        <img src={seamless} alt='digital' />
                     </div>
                 </div>
             </section>
@@ -424,7 +429,7 @@ const Home = () => {
             <section className='ride__section'>
                 <div className='container ride__adventure'>
                     <div className='home__ride-left'>
-                        <img src={student} alt='ride' />
+                        <img src={ride} alt='ride' />
                     </div>
                     <div className='home__ride-right'>
                         <h4>DOSH RIDE:</h4>
@@ -485,18 +490,18 @@ const Home = () => {
                             </svg>
                         </Link>
                     </div>
-                    <div className='home__digital-right'>
-                        <img src={student} alt='digital' />
+                    <div className='home__digital2-right'>
+                        <img src={reinvigorate} alt='digital' />
                     </div>
                 </div>
             </section>
 
             <section className='ride__section'>
                 <div className='container ride__adventure'>
-                    <div className='home__ride-left'>
-                        <img src={student} alt='ride' />
+                    <div className='home__ride2-left'>
+                        <img src={scale} alt='ride' />
                     </div>
-                    <div className='home__ride-right'>
+                    <div className='home__ride2-right'>
                         <h4>DOSH-COMMERCE:</h4>
                         <h3>Scale to new heights<br />
                             reach new markets</h3>
