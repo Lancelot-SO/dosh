@@ -270,3 +270,283 @@ footer {
 }
 
 /* footer css end  */
+
+/* filterModal styles start */
+.modal {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border: none;
+  width: 80%;
+  max-width: 600px;
+  height: 200px;
+  border-radius: 10px;
+  margin-left: 190px;
+  box-shadow: 10px 10px 7px -8px rgba(106, 127, 226, 0.58);
+  -webkit-box-shadow: 10px 10px 7px -8px rgba(106, 127, 226, 0.58);
+  -moz-box-shadow: 10px 10px 7px -8px rgba(106, 127, 226, 0.58);
+}
+
+.modal-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #987C55;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-header h5 {
+  margin: 0;
+}
+
+.modal-body {
+  padding-bottom: 20px;
+}
+
+
+
+.modal-backdrop {
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal.show .modal-backdrop {
+  display: block;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(225, 230, 233, 1);
+
+}
+
+form p {
+  padding-bottom: 10px;
+}
+
+
+.form-select {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(224, 227, 232, 1);
+  background: rgba(224, 227, 232, 0.1);
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.05000000074505806px;
+  text-align: left;
+}
+
+.modal select {
+  width: 100%;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.search-btn {
+  width: 140px;
+  height: 36px;
+  color: #987C55;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.clear-btn {
+  width: 140px;
+  height: 36px;
+  color: rgba(2, 2, 2, 0.56);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal .btn {
+  margin-left: 0.5rem;
+}
+
+/* filterModal styles end */
+
+/* CallModal styles start */
+
+.call-modal {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.call__modal-content {
+  display: flex;
+  width: 830px;
+  height: 543px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.call-left img {
+  border-radius: 20px 0 0 20px;
+  height: 543px;
+  width: 425px;
+  /*TL TR BR BL*/
+}
+
+.call-right {
+  padding: 10px;
+}
+
+.call-close {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #987C55;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  top: 110px;
+  right: 380px;
+}
+
+.call__modal-body {
+  margin-top: 50px;
+}
+
+.call__modal-body p {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #CDB289;
+  padding-bottom: 30px;
+}
+
+.call__modal-body span {
+  color: rgba(111, 108, 144, 1);
+  padding-bottom: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 338px;
+  height: 50px;
+
+}
+
+.call-icon {
+  background: rgba(247, 247, 247, 1);
+  border: none;
+  padding: 2px;
+}
+
+.input-group input {
+  background: rgba(247, 247, 247, 1);
+  border: none;
+}
+
+label {
+  color: rgba(111, 108, 144, 1);
+}
+
+.input-icon {
+  margin-right: 10px;
+}
+
+.input-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.time-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-control {
+  width: 338px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 5px;
+  background: rgba(247, 247, 247, 1);
+  border: none;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.request {
+  width: 200px;
+  height: 39px;
+  padding: 10px, 19.57px, 10px, 19.57px;
+  border-radius: 6.26px;
+  background: linear-gradient(251.21deg, #987C55 0%, #D0B58C 100%);
+  color: #fff;
+}
+
+/* CallModal styles end */

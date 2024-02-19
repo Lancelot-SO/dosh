@@ -53,13 +53,12 @@ const About = () => {
                     </div>
                     <div className='next-about-settings__right'>
                         <h3>Our Core Value</h3>
-                        <p>Partnership: DOSH is committed to working with you every step of the way, ensuring we thoroughly
+                        <p><b>Partnership:</b> DOSH is committed to working with you every step of the way, ensuring we thoroughly
                             understand your needs, so we can offer specific and practical solutions that work for you.
                         </p>
-
-                        <p>Support: DOSH is devoted to assisting you in navigating your financial landscape, ensuring you have access to the necessary support and infrastructure to maximize your economic potential.
+                        <p><b>Support:</b> DOSH is devoted to assisting you in navigating your financial landscape, ensuring you have access to the necessary support and infrastructure to maximize your economic potential.
                         </p>
-                        <p>Innovation: DOSH continuously evaluates and develops new avenues in financial management. We employ “industry best practices”, and class-leading technological innovation, which serves to enhance our commitment to ensuring your financial success.
+                        <p><b>Innovation:</b> DOSH continuously evaluates and develops new avenues in financial management. We employ “industry best practices”, and class-leading technological innovation, which serves to enhance our commitment to ensuring your financial success.
                         </p>
                         <p>At DOSH we believe that financial viability should be accessible to everyone. Join the DOSH revolution and unlock the full potential of your financial portfolio.
                         </p>

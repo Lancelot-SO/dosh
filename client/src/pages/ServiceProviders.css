@@ -55,9 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: -1px 7px 18px -1px rgba(0, 0, 0, 0.7);
-    -webkit-box-shadow: -1px 7px 18px -1px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: -1px 7px 18px -1px rgba(0, 0, 0, 0.7);
+    box-shadow: -1px 2px 2px -1px rgba(0, 0, 0, 0.7);
 }
 
 .search-container {
@@ -212,29 +210,21 @@
     align-items: center;
 }
 
-.person-img {
-    width: 100px;
-    /* Adjust image width as needed */
-    height: auto;
-    /* Maintain aspect ratio */
-    border-radius: 50%;
-    /* Make the image round */
-    margin-right: 20px;
-    /* Add some spacing between image and quote */
+.service-img {
+    width: 221px;
+    height: 290px;
     position: relative;
-    /* Position the overlay */
 }
 
-.person-img::after {
+.service-img::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 50%;
+    background-color: #000;
     /* Semi-transparent black overlay */
-    border-radius: 50%;
     /* Ensure overlay follows image border-radius */
 }
 
@@ -243,25 +233,117 @@
     /* Allow quote container to take remaining space */
 }
 
+.service-name-quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-name {
+    color: #1A202C;
+    padding: 20px;
+    padding-top: 80px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .service-quote {
     color: #fff;
+    background-color: #1A202C;
     /* Set text color */
     font-size: 16px;
+    width: 344px;
+    height: 166px;
+    padding: 20px;
     /* Adjust font size */
 }
 
-.read-more-link {
-    color: #fff;
-    /* Set link color */
-    text-decoration: none;
-    /* Remove default underline */
-    display: flex;
-    /* Align icon and text horizontally */
-    align-items: center;
-    /* Center vertically */
+.serviceslider {
+    padding-top: 30px;
 }
 
-.read-more-link svg {
-    margin-left: 5px;
-    /* Add spacing between text and arrow icon */
+.productslider h1 {
+    align-items: center;
+    display: flex;
+}
+
+.section {
+    margin: 5rem auto;
+}
+
+.section-center {
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 1135px;
+    height: 550px;
+    text-align: start;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+article.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+article.nextSlide {
+    transform: translateX(100%);
+}
+
+article.lastSlide {
+    transform: translateX(-100%);
+}
+
+
+
+.previous,
+.nextitem {
+    position: absolute;
+    top: 267.5px;
+    transform: translateY(-50%);
+    color: #fff;
+    width: 58px;
+    height: 48px;
+    display: grid;
+    background: #C7AC83;
+    place-items: center;
+    border: 1px solid #9E825B;
+    font-size: 1rem;
+    border: none;
+}
+
+.previous:hover,
+.nextitem:hover {
+    background-color: var(--color-white);
+    color: #9E825B;
+}
+
+.previous {
+    left: 227.5px;
+}
+
+.nextitem {
+    right: 227px;
+}
+
+.slider-indicators {
+    font-size: 36px;
+    position: absolute;
+    top: 267.5px;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
 }
